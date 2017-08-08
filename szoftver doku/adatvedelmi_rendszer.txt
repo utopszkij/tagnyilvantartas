@@ -1,0 +1,47 @@
+
+Minden a tagnyilvántartáshoz tartozó taszk lefutattja a 
+components/com_tagnyilvantartas/tagnyilvantartas.php -t
+
+EZ definiál három alapveto védelmi rutint:
+
+/**
+  * az adott felhasználói csoport által nem látható mezõ tartalmak elrejtése
+  * @param record_object
+  * @param record_object  
+  * @return void
+  */
+function itemAccess(& $item, $felhcsop) 
+
+    Ezt a bönészo tmpl -ben a foreach (this->items as $item) -ben és az 
+	edit, show tmpl -ben kell hívni
+
+/**
+  * az adott felhasználói csoport által nem módosítható mezõk értékeinek 
+  * törlése a $data -ból
+  * @param record_object  
+  * @return void
+  */
+function saveAccess($felhcsop,$data) 
+   
+   Ezt a save taskok futásánál kell hívni (a models/kapcsolatok.php hívja)
+
+
+/**
+  * az adott felhasználói csoport által nem módosítható mezõk readonly-vá tétele
+  * @param record_object
+  * @param record_object  
+  * @return void
+  */
+function formAccess(& $form, $felhcsop) 
+    
+   Ezt az edit tmpl -ben kell hívni 
+
+
+Minden a tagnyilvántartáshoz tartozó taszk lefutattja a 
+components/com_tagnyilvantartas/controllers/fejlec.php  start metodusát
+(az lmp template hívja)
+
+   Ez gondoskodik a bejelentkezett user $userCsoport és $userTerhats adatok
+   beolvasásáról és sessionba tárolásáról. A rekordtipus szintu hozzáférés
+   kezelésrol és a saveAccess behivásáról.
+   

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * @version 1.00
+ * @package    joomla
+ * @subpackage tagnyilvantartas
+ * @author	   Fogler Tibor tibor.fogler@gmail.com	
+ * @copyright  Copyright (C) 2015, . All rights reserved.
+ * @license    GPL
+// ====================== példa, jelentősen átirandó ============================
+-->
+<form>
+	<fields>
+
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+			required="false"
+			readonly="true"/>							
+														
+		<field
+			id="kapcs_id"
+			name="kapcs_id"
+			type="text"
+			required="false"
+			label="Kacsolat"
+			description=""
+			class="inputbox"
+			size="10"/>						
+								
+														
+		<field
+			id="user_id"
+			name="user_id"
+			type="text"
+			required="false"
+			label="Kommentelő"
+			description=""
+			class="inputbox"
+			size="40"/>						
+			
+		<field
+			id="idopont"
+			name="idopont"
+			type="text"
+			required="false"
+			label="Időpont"
+			description=""
+			class="inputbox"
+			size="20"/>						
+			
+		<field
+			id="kommentszoveg"
+			name="kommentszoveg"
+			type="textarea"
+			required="false"
+			label="Komment"
+			description=""
+			class="inputbox"
+			cols="80" rows="10"
+			width="600"
+			height="100" />						
+								
+	</fields>	
+</form>	

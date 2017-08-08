@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields>
+
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+			required="false"
+			readonly="true"/>							
+															
+														
+		<field
+			id="megnev"
+			name="megnev"
+			type="text"
+			required="true"
+			label="Megnevezés"
+			description="Kampány megnevezése (max.128 karakter)"
+			class="inputbox"
+			size="128"/>						
+								
+														
+		<field
+			id="leiras"
+			name="leiras"
+			type="textarea"
+			required="false"
+			label="Kampány részletes leírása"
+			description=""
+			class="inputbox"
+			cols="80" rows="5"/>						
+								
+														
+		<field
+			id="helyszin"
+			name="helyszin"
+			type="text"
+			required="true"
+			label="Kampány helyszín"
+			description="Kampány helyszíne (max. 128 karakter)"
+			class="inputbox"
+			size="128"/>						
+								
+														
+		<field
+			id="idopont"
+			name="idopont"
+			type="text"
+			required="true"
+			label="Rendezvény időpontja"
+			description="például: 2017.05.01 10:00 - 14:00"
+			class="inputbox"
+			size="40"/>						
+														
+		<field
+			id="eloado"
+			name="eloado"
+			type="textarea"
+			required="false"
+			label="Előadók felsorolása"
+			description="max: 250 karakter veszővel elválasztva"
+			class="inputbox"
+			colls="80"
+      rows="5"/>						
+
+		<field
+			id="meghivott"
+			name="meghivott"
+			type="textarea"
+			required="false"
+			label="Meghívottak felsorolása"
+			description="max: 250 karakter veszővel elválasztva"
+			class="inputbox"
+			colls="80"
+      rows="5"/>						
+													
+		<field
+			id="kezdet"
+			name="kezdet"
+			type="calendar"
+			required="true"
+			label="Kampány kezdete"
+			description="éééé-hh-nn"
+			class="inputbox"
+			size="10"/>
+
+		<field
+			id="vege"
+			name="vege"
+			type="calendar"
+			required="true"
+			label="Kampány vége"
+			description="éééé-hh-nn"
+			class="inputbox"
+			size="10"/>
+
+
+
+		<field
+			id="allapot"
+			name="allapot"
+			type="list"
+			required="true"
+			label="Kampány állapota"
+			description=""
+			class="inputbox"
+			size="1">
+            <option value="0">Előkészítés alatt</option>
+            <option value="1">Folyamatban</option>
+            <option value="2">Lezárt</option>
+            <option value="3">Felfüggesztett</option>
+        </field>            
+
+		<field
+			id="megjegyzes"
+			name="megjegyzes"
+			type="textarea"
+			required="false"
+			label="Megjegyzés"
+			description="Meglegyzés a kampányhoz, eseményhez max: 250 karakter"
+			class="inputbox"
+			colls="80"
+      rows="5"/>						
+				
+	</fields>	
+</form>	

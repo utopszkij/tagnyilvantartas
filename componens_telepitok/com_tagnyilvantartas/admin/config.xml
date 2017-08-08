@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+   <params>
+   		<param name="example" type="text" default="example" label="Example" description="You can change this in components backend in the config.xml" />
+   </params>
+   
+	<fieldset
+		name="Common"
+		label="Common"
+		description="Common">
+		<field name="example" type="text" default="example" label="Example" description="You can change this in components backend in the config.xml"  />
+	</fieldset>		   
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_tagnyilvantartas"
+			section="component" />
+	</fieldset>	
+</config>

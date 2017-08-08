@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Kategoriaklist">
+		<help
+			key = "KategoriakLIST_DESC"
+		/>
+		<message>
+			<![CDATA[KategoriakLIST_DESC]]>
+		</message>
+	</layout>
+		<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+	</fields>
+</metadata>

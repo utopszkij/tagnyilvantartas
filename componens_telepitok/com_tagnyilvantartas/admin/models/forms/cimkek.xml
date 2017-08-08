@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields>
+
+		<field
+			name="cimke_id"
+			type="hidden"
+			default="0"
+			required="false"
+			readonly="true"/>							
+															
+		<field
+			id="szoveg"
+			name="szoveg"
+			type="text"
+			required="true"
+			label="Szoveg"
+			description="szoveg_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="szoveg"
+			name="szoveg"
+			type="text"
+			required="false"
+			label="Szoveg"
+			description="szoveg_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+								
+	</fields>	
+		
+</form>	

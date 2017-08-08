@@ -1,0 +1,44 @@
+<html>
+  <style type="text/css">
+	td.blank { border-style:solid; border-width:0px 0px 1px 0px; background-color: transparent;}
+    td { border-style:solid; border-width:1px 1px 1px 1px; background-color: #E0E0E0; }
+	td.selected { border-style:solid; border-width:1px 1px 0px 1px; background-color:white; }
+    td.tmplTab { width:80px; border-style:solid; border-width:1px 1px 1px 1px; 
+	             background-color: #E0FFE0; text-align:right }
+    td.tmplTabSelected { width:80px; border-style:solid; border-width:1px 1px 0px 1px; 
+	             background-color: #E0FFE0; text-align:right }
+	
+  </style>
+<body>
+<h3>MVC editor</h3>
+<p>Component:<b>com_tagnyilvantartas</b> View:<b>kapcsolatok</b><button type="button">...</button></p>
+<p>Table:<input type="text" value="#__tn_kapcsolatok" />
+   lngPre:<input type="text" value="KAPCSOLATOK" />
+   Version:<input type="text" value="V 1.00a" />
+</p>
+<div>View leírása</div>
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="5" class="blank">&nbsp;</td>
+    <td width="50" class="selected">Model</td>
+    <td width="50">Controller</td>
+    <td width="50">Viewer</td>
+    <td width="50">Helper</td>
+    <td width="50">Form.xml</td>
+    <td width="50">hu-HU.ini</td>
+    <td class="tmplTab">list <button type="button">X</button></td>
+    <td class="tmplTab">form <button type="button">X</button></td>
+    <td class="tmplTab">show <button type="button">X</button></td>
+	<td width="80" class="blank"><button type="button"">add tmpl</button></td>
+    <td class="blank">&nbsp;</td>
+  </tr>
+</table>
+<div style="margin:0px; border-style:solid; border-width:0px 1px 1px 1px; padding: 5px">
+<textarea cols=80 rows=15></textarea>
+<p>
+  <button type="button">Save</button>
+  <button type="button">Cancel</button>
+</p>
+</div>
+</body>
+</html>

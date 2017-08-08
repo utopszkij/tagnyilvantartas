@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields>
+
+		<field
+			name="terszerv_id"
+			type="hidden"
+			default="0"
+			required="false"
+			readonly="true"/>							
+															
+		<field
+			id="nev"
+			name="nev"
+			type="text"
+			required="true"
+			label="Nev"
+			description="nev_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+						
+		<field
+			id="leiras"
+			name="leiras"
+			type="textarea"
+			label="Leiras"
+			description="leiras_Desc"
+			class="inputbox"
+			/>
+															
+		<field
+			id="tulaj_id"
+			name="tulaj_id"
+			type="sql"
+			required="false"
+			label="Tulaj_id"
+			description="tulaj_id_Desc"
+			class="inputbox"
+            query="select terszerv_id as value, nev as tulaj_id from #__tny_teruletiszervezetek union select '','' order by 2"
+			size="1"/>						
+								
+								
+	</fields>	
+		
+</form>	

@@ -1,0 +1,39 @@
+id	title	alias
+66	Adatbázis visszaállítása mentésbol	adminrestore
+65	Adatbázis mentés készítése	adminbackup
+64	Hibaszurés (dupla e-mail és telefonszám kezelés)	duplakbrowser
+63	Komment módosítása	kommentekedit
+62	Kommentek listája, új komment felvitele	kommentekbrowser
+61	A program változásai	valtozasok
+60	Régi napló bejegyzések törlése	naplospurge
+59	Változás napló megtekintése	naplosshow
+58	Változás napló	naplos
+57	kapcsolatoksstart	kapcsolatoksstart
+56	kapcsolatoksvaltozasnaplo	kapcsolatoksvaltozasnaplo
+55	Export CSV-be	kapcsolatokexportexport
+54	felhcsoportoksfelhcsoportok	felhcsoportoksfelhcsoportok
+53	Területi szervezetek	teruletiszervezetek
+52	kapcsolatoksgroupedit	kapcsolatoksgroupedit
+51	Kapcsolatok  -  szurés eredménye	kapcsolatoksstartszures
+50	Exportálás CSV fájlba - szurés	kapcsolatoksszurtexport
+49	Adat export CSV fájlba - eredmény	kapcsolatoksexport
+48	Felhasználók területi hatásköre, felhasználói csoportjai	felhasznalokedit
+47	Válaszd ki, melyik felhasználó csoport jogaival akarsz dolgozni!	fejleclogin
+46	Felhasználói csoport felvitele, módosítása	felhcsoportokedit
+45	Felhasználói csoportok	felhcsoportoks
+44	Kategória felvitele, módosítása	kategoriakedit
+43	Kategóriák	kategoriaks
+42	Címke felvitele, módosítása	cimkekedit
+41	Címkék	cimkeks
+40	Felhasználók	felhasznaloks
+39	Területi szervezet felvitele, módosítása	teruletiszervezetekedit
+38	Területi szervezetek	teruletiszervezeteks
+37	Kapcsolat adatok beolvasása CSV fájlból	kapcsolatoksimport
+36	Kapcsolat megtekintése	kapcsolatokshow
+33	Kapcsolatok szurés eredménye (export CSV-be)	kapcsolatoksstartexport
+32	Kapcsolatok szurése	kapcsolatoksszures
+28	A program névjegye	nevjegy
+27	Fomenü	fomenu
+26	LMP tagnyilvántartás súgó - Tartalomjegyzék	tartalomjegyzek
+7	Kapcsolat felvitele, módosítása	kapcsolatokedit
+6	Kapcsolatok	kapcsolatoks

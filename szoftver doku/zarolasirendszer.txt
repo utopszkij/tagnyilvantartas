@@ -1,0 +1,11 @@
+Az administrator/templates/lmp/index.php
+
+  -ben van megoldva az elavult zárolások feloldása, és a saját felesleges zárolások feloldása
+  
+Az administrator/components/com_tagnyilvantartas/controllers/kapcsolatok.php, 
+                                                             kapcsolatoks.php, 
+															 doszures.php  -ben
+															 
+  az "edit" és a "import" taskoknál van az idegen zárolás ellenörzése 
+  és az új zárolás.
+  

@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields>
+
+		<field
+			name="kapcs_id"
+			type="hidden"
+			default="0"
+			required="false"
+			readonly="true"/>							
+															
+														
+		<field
+			id="email"
+			name="email"
+			type="email"
+			required="false"
+			label="Email"
+			description="email_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="nev1"
+			name="nev1"
+			type="text"
+			required="true"
+			label="Nev1"
+			description="nev1_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="nev2"
+			name="nev2"
+			type="text"
+			required="false"
+			label="Nev2"
+			description="nev2_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="nev3"
+			name="nev3"
+			type="text"
+			required="false"
+			label="Nev3"
+			description="nev3_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="titulus"
+			name="titulus"
+			type="text"
+			required="false"
+			label="Titulus"
+			description="titulus_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="nem"
+			name="nem"
+			type="list"
+			required="false"
+			label="Nem"
+			description="nem_Desc"
+			class="inputbox"
+			size="1">
+            <option value=""></option>
+            <option value="no">Nő</option>
+            <option value="ffi">Férfi</option>
+        </field>            
+								
+														
+		<field
+			id="email2"
+			name="email2"
+			type="email"
+			required="false"
+			label="Email2"
+			description="email2_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="telefon"
+			name="telefon"
+			type="tel"
+			required="false"
+			label="Telefon"
+			description="telefon_Desc"
+			class="inputbox"
+			size="40"/>						
+			
+		<field
+			id="telefon2"
+			name="telefon2"
+			type="tel"
+			required="false"
+			label="Telefon 2"
+			description=""
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="irsz"
+			name="irsz"
+			type="text"
+			required="false"
+			label="Irsz"
+			description="irsz_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="telepules"
+			name="telepules"
+			type="text"
+			required="false"
+			label="Telepules"
+			description="telepules_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="kerulet"
+			name="kerulet"
+			type="text"
+			required="false"
+			label="Kerulet"
+			description="kerulet_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="utca"
+			name="utca"
+			type="text"
+			required="false"
+			label="Utca"
+			description="utca_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="kjelleg"
+			name="kjelleg"
+			type="text"
+			required="false"
+			label="Kjelleg"
+			description="kjelleg_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="hazszam"
+			name="hazszam"
+			type="text"
+			required="false"
+			label="Hazszam"
+			description="hazszam_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="cimkieg"
+			name="cimkieg"
+			type="text"
+			required="false"
+			label="Cimkieg"
+			description="cimkieg_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="tirsz"
+			name="tirsz"
+			type="text"
+			required="false"
+			label="Tirsz"
+			description="tirsz_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="ttelepules"
+			name="ttelepules"
+			type="text"
+			required="false"
+			label="Ttelepules"
+			description="ttelepules_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="tkerulet"
+			name="tkerulet"
+			type="text"
+			required="false"
+			label="Tkerulet"
+			description="tkerulet_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="tutca"
+			name="tutca"
+			type="text"
+			required="false"
+			label="Tutca"
+			description="tutca_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="tkjelleg"
+			name="tkjelleg"
+			type="text"
+			required="false"
+			label="Tkjelleg"
+			description="tkjelleg_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="thazszam"
+			name="thazszam"
+			type="text"
+			required="false"
+			label="Thazszam"
+			description="thazszam_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="tcimkieg"
+			name="tcimkieg"
+			type="text"
+			required="false"
+			label="Tcimkieg"
+			description="tcimkieg_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="oevk"
+			name="oevk"
+			type="sql"
+			required="false"
+			label="Oevk"
+			description="oevk_Desc"
+			class="inputbox"
+            query="select distinct oevk as value, oevk from #__tny_oevk_torzs union all select '','' order by 1"
+			size="1"/>						
+								
+														
+		<field
+			id="szev"
+			name="szev"
+			type="text"
+			required="false"
+			label="Szev"
+			description="szev_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="kapcsnev"
+			name="kapcsnev"
+			type="text"
+			required="false"
+			label="Kapcsnev"
+			description="kapcsnev_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="kapcsid"
+			name="kapcsid"
+			type="sql"
+			required="false"
+			label="Kapcsid"
+			description="kapcsid_Desc"
+			class="inputbox"
+            query="select id as value, name as kapcsid from #__users"
+			size="1"/>						
+								
+														
+		<field
+			id="kapcsdatum"
+			name="kapcsdatum"
+			type="calendar"
+			required="false"
+			label="Kapcsdatum"
+			description="kapcsdatum_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="kategoria_id"
+			name="kategoria_id"
+			type="sql"
+			required="false"
+			label="Kapcsolat_kategoria_id"
+			description="kategoria_id_Desc"
+			class="inputbox"
+            query="select 0 as value, '?                ' as kategoria_id union all select kategoria_id as value, szoveg as kategoria_id from #__tny_kategoriak order by 2"
+			size="1"/>						
+								
+														
+		<field
+			id="terszerv_id"
+			name="terszerv_id"
+			type="sql"
+			required="false"
+			label="Kapcsolat_terszerv_id"
+			description="terszerv_id_Desc"
+			class="inputbox"
+            query="select 0 as value, '?                                 ' as terszerv_id union all select terszerv_id as value, nev as terszerv_id from #__tny_teruletiszervezetek order by 2"
+			size="1"/>						
+								
+														
+		<field
+			id="cimkek"
+			name="cimkek"
+			type="text"
+			required="false"
+			label="Cimkek"
+			description="cimkek_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="belsoemail"
+			name="belsoemail"
+			type="email"
+			required="false"
+			label="Belsoemail"
+			description="belsoemail_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="hirlevel"
+			name="hirlevel"
+			type="list"
+			required="false"
+			label="Hirlevel"
+			description="hirlevel_Desc"
+			class="inputbox"
+			size="1">						
+			<option value="1">Igen</option>
+			<option value="0">Nem</option>
+		</field>
+														
+		<field
+			id="ellenorzott"
+			name="ellenorzott"
+			type="list"
+			required="false"
+			label="Ellenorzott"
+			description="ellenorzott_Desc"
+			class="inputbox"
+			size="1">
+			<option value="1">Igen</option>
+			<option value="0">Nem</option>
+		</field>
+								
+														
+		<field
+			id="zarol_user_id"
+			name="zarol_user_id"
+			type="text"
+			required="false"
+			label="Zarol_user_id"
+			description="zarol_user_id_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+						
+		<field
+			id="zarol_time"
+			name="zarol_time"
+			type="calendar"
+			required="false"
+			label="Zarol_time"
+			description="zarol_time_Desc"
+			class="inputbox"
+			size="16"
+			format="%Y-%m-%d %H-%M-%S"/>			
+							
+															
+		<field
+			id="lastaction"
+			name="lastaction"
+			type="text"
+			required="false"
+			label="Lastaction"
+			description="lastaction_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="lastact_user_id"
+			name="lastact_user_id"
+			type="text"
+			required="false"
+			label="Lastact_user_id"
+			description="lastact_user_id_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+						
+		<field
+			id="lastact_time"
+			name="lastact_time"
+			type="calendar"
+			required="false"
+			label="Lastact_time"
+			description="lastact_time_Desc"
+			class="inputbox"
+			size="16"
+			format="%Y-%m-%d %H-%M-%S"/>			
+							
+															
+		<field
+			id="lastact_info"
+			name="lastact_info"
+			type="text"
+			required="false"
+			label="Lastact_info"
+			description="lastact_info_Desc"
+			class="inputbox"
+			size="40"/>						
+
+		<field
+			id="megjegyzes"
+			name="megjegyzes"
+			type="textarea"
+			required="false"
+			label="megjegyzes"
+			description="megjegyzes_Desc"
+			class="inputbox"
+			cols="80" rows="10"/>						
+								
+		<field
+			id="meuo3"
+			name="meuo3"
+			type="text"
+			required="false"
+			label="33333"
+			description=""
+			class="inputbox"
+			size="40"/>						
+
+		<field
+			id="telszammegj"
+			name="telszammegj"
+			type="textarea"
+			required="false"
+			label="Tel.szám.megjegyzés"
+			description=""
+			class="inputbox"
+			size="40"/>						
+		<field
+			id="hogyan_csatlakozott"
+			name="hogyan_csatlakozott"
+			type="text"
+			required="false"
+			label="Hogyan csatlakozott"
+			description=""
+			class="inputbox"
+			size="40"/>						
+		<field
+			id="ujmezo"
+			name="ujmezo"
+			type="text"
+			required="false"
+			label="Újmező"
+			description=""
+			class="inputbox"
+			size="40"/>						
+		<field
+			id="probaint"
+			name="probaint"
+			type="text"
+			required="false"
+			label="probaint"
+			description=""
+			class="inputbox"
+			size="40"/>						
+		<field
+			id="parttagstart"
+			name="parttagstart"
+			type="calendar"
+			required="false"
+			label="Párttagság kezdete"
+			description="Ha nem párttag akkor ez legyen üres"
+			class="inputbox"
+			size="40"/>						
+		<field
+			id="parttagend"
+			name="parttagend"
+			type="calendar"
+			required="false"
+			label="Párttagság vége"
+			description="Ha jelenleg is párttag, vagy nem is volt párttag akkor ez legyen üres"
+			class="inputbox"
+			size="40"/>						
+		<field
+			id="orszag"
+			name="orszag"
+			type="sql"
+			required="false"
+			label="Ország"
+			description=""
+			query="SELECT orszkod AS value, megn AS orszag FROM lmp_tny_orszkod UNION ALL SELECT '','?' ORDER BY 2"
+			class="inputbox"/>
+		<field
+			id="torszag"
+			name="torszag"
+			type="sql"
+			required="false"
+			label="Ország"
+			description=""
+			query="SELECT orszkod AS value, megn AS torszag FROM lmp_tny_orszkod UNION ALL SELECT '','?' ORDER BY 2"
+			class="inputbox"/>
+	</fields>	
+		
+</form>	

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields>
+
+		<field
+			name="fcsop_id"
+			type="hidden"
+			default="0"
+			required="false"
+			readonly="true"/>							
+															
+		<field
+			id="nev"
+			name="nev"
+			type="text"
+			required="true"
+			label="fcsop_nev"
+			description="fcsop_nev_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+														
+		<field
+			id="kod"
+			name="kod"
+			type="text"
+			required="true"
+			label="Kod"
+			description="kod_Desc"
+			class="inputbox"
+			size="40"/>						
+								
+		<field
+			id="jog_email"
+			name="jog_email"
+			type="radio"
+			required="false"
+			label="Jog_email"
+			description="jog_email_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+								
+														
+		<field
+			id="jog_nev"
+			name="jog_nev"
+			type="radio"
+			required="false"
+			label="Jog_nev"
+			description="jog_nev_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+								
+														
+		<field
+			id="jog_telefonszam"
+			name="jog_telefonszam"
+			type="radio"
+			required="false"
+			label="Jog_telefonszam"
+			description="jog_telefonszam_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+								
+														
+		<field
+			id="jog_lakcim"
+			name="jog_lakcim"
+			type="radio"
+			required="false"
+			label="Jog_lakcim"
+			description="jog_lakcim_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+								
+														
+		<field
+			id="jog_tarthely"
+			name="jog_tarthely"
+			type="radio"
+			required="false"
+			label="Jog_tarthely"
+			description="jog_tarthely_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+								
+														
+		<field
+			id="jog_oevk"
+			name="jog_oevk"
+			type="radio"
+			required="false"
+			label="Jog_oevk"
+			description="jog_oevk_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+								
+														
+		<field
+			id="jog_szev"
+			name="jog_szev"
+			type="radio"
+			required="false"
+			label="Jog_szev"
+			description="jog_szev_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+								
+		<field
+			id="jog_kapcskat"
+			name="jog_kapcskat"
+			type="radio"
+			required="false"
+			label="Jog_kapcskat"
+			description="jog_kapcskat_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+								
+														
+		<field
+			id="jog_kapcster"
+			name="jog_kapcster"
+			type="radio"
+			required="false"
+			label="Jog_kapcster"
+			description="jog_kapcster_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+								
+														
+		<field
+			id="jog_kapcscimkek"
+			name="jog_kapcscimkek"
+			type="radio"
+			required="false"
+			label="Jog_kapcscimkek"
+			description="jog_kapcscimkek_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+								
+														
+		<field
+			id="jog_kapcshirlevel"
+			name="jog_kapcshirlevel"
+			type="radio"
+			required="false"
+			label="Jog_kapcshirlevel"
+			description="jog_kapcshirlevel_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+								
+														
+		<field
+			id="jog_ellenorzott"
+			name="jog_ellenorzott"
+			type="radio"
+			required="false"
+			label="Jog_ellenorzott"
+			description="jog_ellenorzott_Desc"
+			class="inputbox"
+			size="1">						
+            <option value="R">Olvasás</option>
+            <option value="RW">Írás</option>
+            <option value="X">Tiltott</option>
+        </field>            
+            
+		<field
+			id="jog_felhasznalok"
+			name="jog_felhasznalok"
+			type="checkbox"
+			required="false"
+			label="Jog_felhasznalok"
+			description="jog_felhasznalok_Desc"
+			class="inputbox"
+			size="1">
+        </field>            
+														
+		<field
+			id="jog_terszerv"
+			name="jog_terszerv"
+			type="checkbox"
+			required="false"
+			label="Jog_terszerv"
+			description="jog_terszerv_Desc"
+			class="inputbox"
+			size="1">						
+        </field>            
+														
+		<field
+			id="jog_kategoriak"
+			name="jog_kategoriak"
+			type="checkbox"
+			required="false"
+			label="Jog_kategoriak"
+			description="jog_kategoriak_Desc"
+			class="inputbox"
+			size="1">						
+        </field>            
+														
+		<field
+			id="jog_cimkek"
+			name="jog_cimkek"
+			type="checkbox"
+			required="false"
+			label="Jog_cimkek"
+			description="jog_cimkek_Desc"
+			class="inputbox"
+			size="1">						
+        </field>            
+								
+														
+		<field
+			id="jog_csoportos"
+			name="jog_csoportos"
+			type="checkbox"
+			required="false"
+			label="Jog_csoportos"
+			description="jog_csoportos_Desc"
+			class="inputbox"
+			size="1"/>						
+								
+														
+		<field
+			id="jog_hirlevel"
+			name="jog_hirlevel"
+			type="checkbox"
+			required="false"
+			label="Jog_hirlevel"
+			description="jog_hirlevel_Desc"
+			class="inputbox"
+			size="1"/>						
+								
+														
+		<field
+			id="jog_csv"
+			name="jog_csv"
+			type="checkbox"
+			required="false"
+			label="Jog_csv"
+			description="jog_csv_Desc"
+			class="inputbox"
+			size="1"/>						
+														
+														
+		<field
+			id="jog_kapcsolat"
+			name="jog_kapcsolat"
+			type="checkbox"
+			required="false"
+			label="Jog_kapcsolat"
+			description="jog_kapcsolat_Desc"
+			class="inputbox"
+			size="1">						
+        </field>            
+								
+	</fields>	
+		
+</form>	

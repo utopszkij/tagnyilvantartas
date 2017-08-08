@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Kategoriak">
+		<help
+			key = "Kategoriak_DESC"
+		/>
+		<message>
+			<![CDATA[Kategoriak_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_tagnyilvantartas/models/fields"
+		>
+			<field name="kategoria_id"
+				type="modal_kategoriak"
+				description="Kategoriak_SELECT_DESC"
+				label="Select Kategoriak"
+				required="true"
+			/>
+		</fieldset>
+	</fields>	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+	</fields>
+</metadata>

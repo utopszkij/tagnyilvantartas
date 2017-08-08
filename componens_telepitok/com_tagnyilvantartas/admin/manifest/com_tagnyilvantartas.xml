@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade" version="1.6">
+	<name>Tagnyilvantartas</name>
+	<creationDate>2015-05-30</creationDate>
+	<author></author>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Copyright (C) 2015  Open Source Matters. All rights reserved.</copyright>	
+	<license></license>
+	<version>1.0</version>
+	<description>LMP tagnyilvántartás</description>
+	<installfile></installfile>
+	<uninstallfile></uninstallfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+	<files folder="site">
+			<filename>tagnyilvantartas.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>			
+			<filename>router.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>assets</folder>			
+	</files>	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB.com_tagnyilvantartas.ini</language>
+    	<language tag="de-DE">language/de-DE.com_tagnyilvantartas.ini</language>            
+	</languages>
+	<administration>
+		<menu link="index.php?option=com_tagnyilvantartas">Tagnyilvantartas</menu>
+			<submenu>
+		  <menu link="option=com_tagnyilvantartas&amp;view=cimkeks">Cimkeks</menu>
+		  <menu link="option=com_tagnyilvantartas&amp;view=felhcsoportoks">Felhcsoportoks</menu>
+		  <menu link="option=com_tagnyilvantartas&amp;view=kapcsolatoks">Kapcsolatoks</menu>
+		  <menu link="option=com_tagnyilvantartas&amp;view=kategoriaks">Kategoriaks</menu>
+		  <menu link="option=com_tagnyilvantartas&amp;view=teruletiszervezeteks">Teruletiszervezeteks</menu>
+
+			</submenu>
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>tagnyilvantartas.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>access.xml</filename>			
+			<folder>assets</folder>
+			<folder>elements</folder>				
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>manifest</folder>			
+			<folder>models</folder>
+			<folder>sql</folder>			
+			<folder>tables</folder>
+			<folder>views</folder>									
+		</files>	
+        <languages folder="admin">
+        	<language tag="en-GB">language/en-GB.com_tagnyilvantartas.ini</language>
+            <language tag="de-DE">language/de-DE.com_tagnyilvantartas.ini</language>
+        	<language tag="en-GB">language/en-GB.com_tagnyilvantartas.sys.ini</language>
+            <language tag="de-DE">language/de-DE.com_tagnyilvantartas.sys.ini</language>                           
+		</languages>		
+	</administration>
+</extension>
