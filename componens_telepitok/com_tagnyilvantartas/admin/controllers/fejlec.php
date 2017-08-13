@@ -122,9 +122,16 @@ class tagnyilvantartasControllerFejlec extends JControllerLegacy {
          if (($view=='kapcsolatok') & ($userCsoport->jog_kapcsolat == 1)) $jo = true;
          if (($view=='kapcsolatoks') & ($userCsoport->jog_kapcsolat == 1)) $jo = true;
          if (($view=='doszures') & ($userCsoport->jog_kapcsolat == 1)) $jo = true;
-         if (($view=='teruletiszervezetek') & ($userCsoport->jog_terszerv == 1)) $jo = true;
+		 if (($view=='teruletiszervezetek') & ($userCsoport->jog_terszerv == 1)) $jo = true;
          if (($view=='teruletiszervezeteks') & ($userCsoport->jog_terszerv == 1)) $jo = true;
-         if (($view=='felhasznalok') & ($userCsoport->jog_felhasznalok == 1)) $jo = true;
+         
+		 //+ 2017.08.11 
+		 if (($view=='terszervmap') & ($userCsoport->jog_terszerv == 1)) $jo = true;
+         if (($view=='terszervmaps') & ($userCsoport->jog_terszerv == 1)) $jo = true;
+         //- 2017.08.11 
+		 
+		 
+		 if (($view=='felhasznalok') & ($userCsoport->jog_felhasznalok == 1)) $jo = true;
          if (($view=='felhasznaloks') & ($userCsoport->jog_felhasznalok == 1)) $jo = true;
          if (($view=='admin') & ($userCsoport->kod == 'A')) $jo = true;
          if (($view=='admin') & ($userCsoport->kod == 'SM')) $jo = true;

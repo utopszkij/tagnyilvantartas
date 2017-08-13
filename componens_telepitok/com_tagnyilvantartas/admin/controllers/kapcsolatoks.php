@@ -456,7 +456,7 @@ where kerulet = "" and telepules = "Budapest" and
 	}
 	echo $db->getQuery().'<br /><br />';
 	
-	/* 5. kapcs_id feltölteni 0 */
+	/* 5. kapcs_id feltölteni 1 */
 	$db->setQuery('update lmp_tny_wkapcsolatok set kapcs_id = 0;');
 	if (!$db->query()){
 			echo 'ERROR a kapcs_id feltöltésénél ';
@@ -547,7 +547,45 @@ where kerulet = "" and telepules = "Budapest" and
 			return true;
 	}
 	echo $db->getQuery().'<br /><br />';
-	$db->setQuery('select * from lmp_tny_wkapcsolatok where terszerv_id < 0 or terszerv_id > 40');
+	
+	
+	/* kapcsolatok.terszerv_id kitöltése a wkapcsolatokban (csv beolvasáshoz való) */
+	
+	$db->setQuery('
+	update lmp_tny_wkapcsolatok w, lmp_tny_terszerv_map tm
+	SET w.terszerv_id = tm.terszerv_id
+	WHERE w.orszag = "hu" AND w.telepules = "Budapest" AND w.telepules = tm.telepules AND w.kerulet = tm.kerulet AND 
+	(w.terszerv_id <= 0 OR w.terszerv_id = "")');
+	if (!$db->query()){
+			echo 'ERROR a terszerv_id auto kitöltésenel ';
+			return true;
+	}
+	echo $db->getQuery().'<br /><br />';
+
+	$db->setQuery('
+	update lmp_tny_wkapcsolatok w, lmp_tny_terszerv_map tm
+	SET w.terszerv_id = tm.terszerv_id
+	WHERE w.orszag = "hu" AND w.telepules <> 'Budapest' AND w.telepules = tm.telepules AND 
+	(w.terszerv_id <= 0 OR w.terszerv_id = '')');
+	if (!$db->query()){
+			echo 'ERROR a terszerv_id auto kitöltésenel ';
+			return true;
+	}
+	echo $db->getQuery().'<br /><br />';
+
+	$db->setQuery('
+	update lmp_tny_wkapcsolatok w
+	SET w.terszerv_id = 1
+	WHERE (w.terszerv_id <= 0 OR w.terszerv_id = "")');
+	if (!$db->query()){
+			echo 'ERROR a terszerv_id auto kitöltésenel ';
+			return true;
+	}
+	echo $db->getQuery().'<br /><br />';
+
+	
+	
+	$db->setQuery('select * from lmp_tny_wkapcsolatok where terszerv_id < 0 or terszerv_id > 40 or terszerv_id = ""');
 	$res = $db->loadObjectList();
 	if (count($res) > 0) {
 		echo 'Nem sikerült minden terszerv_id kodolása.';

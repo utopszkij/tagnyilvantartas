@@ -96,6 +96,7 @@
                 <ul class="nav-child unstyled small">
                   <li class="item-524"><a href="index.php?option=com_tagnyilvantartas&view=teruletiszervezeteks" >Böngészés</a></li>
                   <li class="item-525"><a href="index.php?option=com_tagnyilvantartas&view=teruletiszervezetek&layout=edit" >Új felvitel</a></li>
+                  <li class="item-525"><a href="index.php?option=com_tagnyilvantartas&view=terszervmaps">Települések</a></li>
                 </ul>
               </li>
               <li class="item-3 deeper parent"><a name="kezelok" >Kezelők</a>

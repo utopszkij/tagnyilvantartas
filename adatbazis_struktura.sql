@@ -213,7 +213,7 @@ CREATE TABLE `lmp_tny_kapcsolatok` (
   KEY `lmp_tny_kapcsolatoki` (`telepules`,`kerulet`),
   KEY `email` (`email`),
   KEY `email2` (`email2`)
-) ENGINE=InnoDB AUTO_INCREMENT=113526 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=113529 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 /*Table structure for table `lmp_tny_kategoriak` */
 
@@ -379,7 +379,7 @@ CREATE TABLE `lmp_tny_teruletiszervezetek` (
   `leiras` text COLLATE utf8_hungarian_ci NOT NULL,
   `tulaj_id` int(11) NOT NULL,
   PRIMARY KEY (`terszerv_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 /*Table structure for table `lmp_tny_utkozesek` */
 
@@ -429,193 +429,6 @@ CREATE TABLE `lmp_tny_utkozesek` (
   `lastact_info` varchar(80) COLLATE utf8_hungarian_ci NOT NULL,
   `megjegyzes` text COLLATE utf8_hungarian_ci,
   PRIMARY KEY (`kapcs_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
-
-/*Table structure for table `lmp_tny_wduplaemailek` */
-
-DROP TABLE IF EXISTS `lmp_tny_wduplaemailek`;
-
-CREATE TABLE `lmp_tny_wduplaemailek` (
-  `email` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `nevek` text COLLATE utf8_hungarian_ci
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
-
-/*Table structure for table `lmp_tny_wkapcsolatok` */
-
-DROP TABLE IF EXISTS `lmp_tny_wkapcsolatok`;
-
-CREATE TABLE `lmp_tny_wkapcsolatok` (
-  `kapcs_id` varchar(200) COLLATE utf8_hungarian_ci NOT NULL,
-  `email` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `nev1` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `nev2` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `nev3` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `titulus` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
-  `nem` varchar(3) COLLATE utf8_hungarian_ci NOT NULL,
-  `email2` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `telefon` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
-  `irsz` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
-  `telepules` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `kerulet` varchar(12) COLLATE utf8_hungarian_ci NOT NULL,
-  `utca` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `kjelleg` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
-  `hazszam` varchar(12) COLLATE utf8_hungarian_ci NOT NULL,
-  `cimkieg` varchar(20) COLLATE utf8_hungarian_ci NOT NULL,
-  `tirsz` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
-  `ttelepules` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `tkerulet` varchar(12) COLLATE utf8_hungarian_ci NOT NULL,
-  `tutca` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `tkjelleg` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
-  `thazszam` varchar(12) COLLATE utf8_hungarian_ci NOT NULL,
-  `tcimkieg` varchar(20) COLLATE utf8_hungarian_ci NOT NULL,
-  `oevk` varchar(20) COLLATE utf8_hungarian_ci NOT NULL,
-  `szev` varchar(12) COLLATE utf8_hungarian_ci NOT NULL,
-  `kapcsnev` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `kapcsid` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
-  `kapcsdatum` date NOT NULL,
-  `kategoria_id` varchar(200) COLLATE utf8_hungarian_ci NOT NULL,
-  `terszerv_id` varchar(250) COLLATE utf8_hungarian_ci NOT NULL,
-  `cimkek` varchar(80) COLLATE utf8_hungarian_ci NOT NULL,
-  `belsoemail` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `hirlevel` varchar(200) COLLATE utf8_hungarian_ci NOT NULL,
-  `ellenorzott` varchar(200) COLLATE utf8_hungarian_ci NOT NULL,
-  `zarol_user_id` varchar(11) COLLATE utf8_hungarian_ci NOT NULL,
-  `zarol_time` bigint(20) NOT NULL,
-  `lastaction` varchar(20) COLLATE utf8_hungarian_ci NOT NULL,
-  `lastact_user_id` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
-  `lastact_time` datetime NOT NULL,
-  `lastact_info` varchar(80) COLLATE utf8_hungarian_ci NOT NULL,
-  `megjegyzes` text COLLATE utf8_hungarian_ci NOT NULL,
-  `telefon2` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `telszammegj` varchar(255) COLLATE utf8_hungarian_ci NOT NULL,
-  `hogyan_csatlakozott` varchar(128) COLLATE utf8_hungarian_ci NOT NULL,
-  `parttagstart` varchar(128) COLLATE utf8_hungarian_ci NOT NULL DEFAULT '',
-  `parttagend` varchar(128) COLLATE utf8_hungarian_ci NOT NULL DEFAULT '',
-  `telmegj2` varchar(128) COLLATE utf8_hungarian_ci NOT NULL DEFAULT '',
-  `orszag` char(30) COLLATE utf8_hungarian_ci NOT NULL DEFAULT '',
-  `torszag` char(30) COLLATE utf8_hungarian_ci NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
-
-/*Table structure for table `lmp_tny_wkapcsolatok2` */
-
-DROP TABLE IF EXISTS `lmp_tny_wkapcsolatok2`;
-
-CREATE TABLE `lmp_tny_wkapcsolatok2` (
-  `kapcs_id` int(11) unsigned NOT NULL DEFAULT '0',
-  `email` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `nev1` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `nev2` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `nev3` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `titulus` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
-  `nem` varchar(3) COLLATE utf8_hungarian_ci NOT NULL,
-  `email2` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `telefon` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
-  `irsz` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
-  `telepules` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `kerulet` int(2) NOT NULL,
-  `utca` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `kjelleg` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
-  `hazszam` int(4) NOT NULL,
-  `cimkieg` varchar(20) COLLATE utf8_hungarian_ci NOT NULL,
-  `tirsz` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
-  `ttelepules` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `tkerulet` int(2) NOT NULL,
-  `tutca` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `tkjelleg` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
-  `thazszam` int(3) NOT NULL,
-  `tcimkieg` varchar(20) COLLATE utf8_hungarian_ci NOT NULL,
-  `oevk` varchar(20) COLLATE utf8_hungarian_ci NOT NULL,
-  `szev` int(4) NOT NULL,
-  `kapcsnev` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `kapcsid` int(11) NOT NULL,
-  `kapcsdatum` date NOT NULL,
-  `kategoria_id` int(11) NOT NULL,
-  `terszerv_id` int(11) NOT NULL,
-  `cimkek` varchar(80) COLLATE utf8_hungarian_ci NOT NULL,
-  `belsoemail` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `hirlevel` tinyint(1) NOT NULL,
-  `ellenorzott` tinyint(1) NOT NULL,
-  `zarol_user_id` int(11) NOT NULL,
-  `zarol_time` bigint(20) NOT NULL,
-  `lastaction` varchar(20) COLLATE utf8_hungarian_ci NOT NULL,
-  `lastact_user_id` int(11) NOT NULL,
-  `lastact_time` datetime NOT NULL,
-  `lastact_info` varchar(80) COLLATE utf8_hungarian_ci NOT NULL,
-  `megjegyzes` text COLLATE utf8_hungarian_ci NOT NULL,
-  `telefon2` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `telszammegj` varchar(255) COLLATE utf8_hungarian_ci NOT NULL,
-  `hogyan_csatlakozott` varchar(128) COLLATE utf8_hungarian_ci NOT NULL,
-  `parttagstart` varchar(128) COLLATE utf8_hungarian_ci NOT NULL,
-  `parttagend` varchar(128) COLLATE utf8_hungarian_ci NOT NULL,
-  `telmegj2` varchar(128) COLLATE utf8_hungarian_ci NOT NULL,
-  `orszag` varchar(30) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `torszag` varchar(30) COLLATE utf8_hungarian_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
-
-/*Table structure for table `lmp_tny_woevk` */
-
-DROP TABLE IF EXISTS `lmp_tny_woevk`;
-
-CREATE TABLE `lmp_tny_woevk` (
-  `kapcs_id` int(11) unsigned NOT NULL DEFAULT '0',
-  `telepules` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `kerulet` int(2) NOT NULL,
-  `utca` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
-  `hazszam` int(4) NOT NULL,
-  `OEVK` varchar(20) COLLATE utf8_hungarian_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
-
-/*Table structure for table `lmp_tny_woevk1` */
-
-DROP TABLE IF EXISTS `lmp_tny_woevk1`;
-
-CREATE TABLE `lmp_tny_woevk1` (
-  `darab` bigint(21) NOT NULL DEFAULT '0',
-  `ev` int(4) DEFAULT NULL,
-  `OEVK` varchar(20) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `telepules` varchar(80) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `kerulet` char(2) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `kozterulet` varchar(80) COLLATE utf8_hungarian_ci DEFAULT NULL COMMENT 'Ha üres akkor ez atelepülés default',
-  `hazszamtol` char(4) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `hazszamig` char(4) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `paros` varchar(20) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  KEY `lmp_tny_woevk1i` (`telepules`,`kerulet`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
-
-/*Table structure for table `lmp_tny_woevk2` */
-
-DROP TABLE IF EXISTS `lmp_tny_woevk2`;
-
-CREATE TABLE `lmp_tny_woevk2` (
-  `ev` int(4) DEFAULT NULL,
-  `oevk` varchar(20) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `telepules` varchar(80) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `kerulet` char(2) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `kozterulet` varchar(80) COLLATE utf8_hungarian_ci DEFAULT NULL COMMENT 'Ha üres akkor ez atelepülés default',
-  `hazszamtol` char(4) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `hazszamig` char(4) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `paros` varchar(20) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  KEY `lmp_tny_woevk2i` (`telepules`,`kerulet`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
-
-/*Table structure for table `lmp_tny_wterszerv_jav` */
-
-DROP TABLE IF EXISTS `lmp_tny_wterszerv_jav`;
-
-CREATE TABLE `lmp_tny_wterszerv_jav` (
-  `kapcs_id` varchar(200) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `nev1` varchar(40) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `nev2` varchar(40) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `nev3` varchar(40) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `irsz` varchar(10) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `telepules` varchar(40) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `kerulet` varchar(12) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `utca` varchar(40) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `kjelleg` varchar(10) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `hazszam` varchar(12) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `cimkieg` varchar(20) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `kategoria_id` varchar(200) COLLATE utf8_hungarian_ci DEFAULT NULL,
-  `terszerv` varchar(250) COLLATE utf8_hungarian_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 /* Function  structure for function  `SPLIT_STRING` */

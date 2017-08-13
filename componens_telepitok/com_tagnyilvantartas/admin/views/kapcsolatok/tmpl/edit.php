@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
 * @version		$Id:edit.php 1 2015-05-30 06:28:16Z  $
 * @copyright	Copyright (C) 2015, . All rights reserved.
@@ -375,8 +375,12 @@ Joomla.submitbutton = function(task)
 						<?php echo $this->form->getLabel('terszerv_id'); ?>
 					</div>
 					
-					<div class="controls">	
+					<div class="controls" style="height:80px;">
 						<?php echo $this->form->getInput('terszerv_id');  ?>
+						<p style=" width:250px">
+						<span id="terszervJavaslat" style="color:green;"></span>
+						<button id="terszervButton" style="display:none" type="button">Beír</button>
+						</p>
 					</div>
 				</div>		
 
@@ -478,6 +482,50 @@ Joomla.submitbutton = function(task)
 <?php echo $hirlevel_csatlakozasok; ?>
     
     <script type="text/javascript">
+	   jQuery(function() {
+		   <?php
+		   $db->setQuery('select * from #__tny_terszerv_map order by 1,2');
+		   $res = $db->loadObjectList();
+		   echo "terszervMap = ".JSON_encode($res).";";	
+		   ?>
+		   jQuery('#jform_telepules').change(terszervJavaslo);
+		   jQuery('#jform_kerulet').change(terszervJavaslo);
+		   jQuery('#terszervButton').click(
+				function() {
+					var terszervId = jQuery('#terszervButton').val();
+					if (terszervId > 0)
+						jQuery('#jform_terszerv_id').val(terszervId);
+				}
+		   );
+	   });
+	   
+	   
+	   function terszervJavaslo() {
+		   var telepules = jQuery('#jform_telepules').val();
+		   var kerulet = jQuery('#jform_kerulet').val();
+		   var terszervId = 1;
+		   var terszervNev = '';
+		   telepules = telepules.toLowerCase();
+		   if (kerulet == '') kerulet = 0;
+		   if (telepules != 'budapest') kerulet = 0;
+		   var i = 0;
+		   for (i = 0; i < terszervMap.length; i++) {
+			   if ((telepules == terszervMap[i].telepules.toLowerCase()) & (kerulet == terszervMap[i].kerulet)) {
+				   terszervId = terszervMap[i].terszerv_id;
+				   terszervNev = terszervMap[i].terszerv_nev;
+			   }
+		   }
+		   if (terszervNev != '') {
+			   jQuery('#terszervJavaslat').html('Javaslat<br />'+terszervNev);
+			   jQuery('#terszervButton').val(terszervId);
+			   jQuery('#terszervButton').show();
+		   } else {
+			   jQuery('#terszervJavaslat').html('');
+			   jQuery('#terszervButton').val('');
+			   jQuery('#terszervButton').hide();
+		   }
+	   }
+	   	
        function cimkeClick() {
           var d = document.getElementById('cimkekPopup');
           d.style.display="block";          
